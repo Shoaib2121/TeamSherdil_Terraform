@@ -5,9 +5,9 @@ resource "aws_vpc" "main_vpc" {
     Name = "TeamSherdil_vpc"
   }
 }
-resource "aws_internet_gateway" "main-igw"{
-    vpc_id = aws_vpc.main_vpc.id
-    tags = {
-        Name = "TeamSherdil-igw"
-    }
+resource "aws_internet_gateway" "main-igw" {
+  vpc_id = aws_vpc.main_vpc.id
+  tags = {
+    Name = "TeamSherdil-igw"
+  }
 }
