@@ -13,8 +13,6 @@ resource "aws_internet_gateway" "main-igw" {
 }
 resource "aws_default_route_table" "private_rt" {
   default_route_table_id = aws_vpc.main_vpc.default_route_table_id
-  
-
   tags = {
     Name = "teamSherdil_private_rt"
   }
