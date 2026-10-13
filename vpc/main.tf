@@ -18,9 +18,9 @@ resource "aws_default_route_table" "private_rt" {
   }
 }
 
-resource "aws_route_table" "pvt-rt" {
-  vpc_id = aws_vpc.main_vpc.id
-  tags = {
-    Name = "pvt-rt"
-  }
-}
+# resource "aws_route_table" "pvt-rt" {
+#   vpc_id = aws_vpc.main_vpc.id
+#   tags = {
+#     Name = "pvt-rt"
+#   }
+# }
